@@ -25,6 +25,13 @@ export const createUser = async (user: CreateUserParams) => {
       undefined,
       user.name
     );
+    // try {
+    //   const newuser = await databases.createDocument(
+    //     DATABASE_ID!,
+    //     PATIENT_COLLECTION_ID!,
+    //     ID.unique(),
+    //     user
+    //   );
 
     return parseStringify(newuser);
   } catch (error: any) {
